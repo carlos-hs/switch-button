@@ -16,7 +16,7 @@ A switch button for your app, based on ngSwitch.
     ...
   })
 
-
+------------------------------------------------------
 Single:
 
   <h6><b>your-app.component.html:</b></h6>
@@ -30,7 +30,7 @@ Single:
         this.switch.value = checked;
     }
 
-
+------------------------------------------------------
 <i>Multiple:</i>
   
   <h6><b>your-app.component.html:</b></h6>
