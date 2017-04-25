@@ -1,4 +1,4 @@
-﻿import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
     selector: 'switch-button',
@@ -9,9 +9,10 @@
 export class SwitchButtonComponent {
     @Input() value: boolean;
     @Input() color: string;
+    @Output() change = new EventEmitter<boolean>();
 
     onSwitchButton() {
         this.value = !this.value;
-        console.log(this.value);
+        this.change.emit(this.value);
     }
 }
